@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "750206121501",
+    "project_id": "villagebankinggui",
+    "storage_bucket": "villagebankinggui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750206121501:android:61912f02c0527258e238f4",
+        "android_client_info": {
+          "package_name": "com.example.villagebankingui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750206121501-hapmj6hb01ko8qa40j5hl3i3embqeu45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9pHLjuBJI8V33bPIMP1vr5r7rNBXgbxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750206121501-hapmj6hb01ko8qa40j5hl3i3embqeu45.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
