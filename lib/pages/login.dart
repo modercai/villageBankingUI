@@ -1,8 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:villagebankingui/pages/forgot_password.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback showRegistrationPage;
@@ -101,10 +102,36 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
+
+                SizedBox(
+                  height: 10,
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 21),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) {
+                            return ForgotPasswordPage();
+                          }));
+                        },
+                        child: Text(
+                          'forgot password?',
+                          style: TextStyle(
+                              color: Colors.blue, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
                 SizedBox(
                   height: 20,
                 ),
-
                 //signinn button
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -112,7 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                     onTap: signIn,
                     child: Container(
                       decoration: BoxDecoration(
-                          color: Colors.deepPurpleAccent,
+                          color: Colors.deepPurple,
                           borderRadius: BorderRadius.circular(16)),
                       child: Padding(
                         padding: const EdgeInsets.all(15),

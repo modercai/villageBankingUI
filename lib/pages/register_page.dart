@@ -146,7 +146,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   height: 20,
                 ),
 
-                //signinn button
+                //signup button
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: GestureDetector(
