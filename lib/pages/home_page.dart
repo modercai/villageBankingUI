@@ -144,7 +144,7 @@ class _HomePageState extends State<HomePage> {
                       }),
                       child: MyButtons(
                         iconPath: 'lib/icons/deposit.png',
-                        buttonText: 'Deposit',
+                        buttonText: 'Transact',
                       ),
                     ),
                     MyButtons(
